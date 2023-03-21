@@ -1,0 +1,104 @@
+body{
+    
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-attachment:fixed;
+    font-size:14pt;
+}
+.mobi{
+    width:300px;
+    height:500px;
+    border-radius:10px;
+    margin:auto;
+    margin-top:70px;
+    background:#fff;
+    box-shadow:2px 2px 18px 4px rgba(0,0,0,0.5);
+}
+/* 
+.option{
+    margin-top:50px;
+}
+.option p:first-child{
+    margin-top:50px;
+}
+.option p:last-child{
+    margin-bottom:50px;
+}
+.option p{
+    padding:10px 40px;
+    margin:10px 40px;
+    border:none;
+    border-radius:10px;
+    background:#ccc;
+    -webkit-transition:background, cursor, .50s;
+}
+.option p:hover{
+    background:#737373;
+    cursor:pointer;
+} */
+.select{
+    bottom:0;
+    height:45px;
+    margin-top:120px;
+    background:darkblue;
+    border-radius:10px 10px 10px 10px;
+}
+.select a{
+    text-align:center;
+    display:inline-block;
+    margin:0;
+    margin-left:45px;
+    color:#fff;
+    font-size:18pt;
+    padding:10px 20px;
+}
+.fas{
+    -webkit-transition:color .50s;
+}
+.fas:hover{
+    color:#0073e6;
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  /* Float four columns side by side */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+
+  

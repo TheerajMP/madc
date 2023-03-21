@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+body{
+    overflow: hidden;
+    
+}
+.main{
+    width: 100%;
+    height: 850px;
+    /* border: 2px solid black; */
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+    /* margin: 5em auto; */
+    position: relative;
+}
+.main:after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 42%;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+img{
+    height: 600px;
+    width: 100%;
+}
+.image{
+    /* position:fixed; */
+    /* top: 30px; */
+
+    left: 0;
+    width: 100%;
+}
+
+#menu{
+    position: absolute;
+    width: 10%;
+    top: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 420px;
+    padding: 3em 2em;
+    line-height: 1;
+    z-index: 5;
+    text-align: center;
+  
+}
+.content h1{
+    display: flex;
+  justify-content: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button{
+    background-color: rgb(64, 64, 159);
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+    border: white;
+    width: 200px;
+}
+.ss{
+    color: rgb(64, 64, 159);
+}
+
+.dott{
+    font-size: 80px;
+}
+.one{
+    color: rgb(64, 64, 159);
+}

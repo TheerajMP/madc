@@ -1,0 +1,214 @@
+<html>
+<head>
+    <title>Ui-ux</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.5.0/css/all.css'>
+    <link rel='stylesheet' href='./second.css'/>
+    <style>
+        .search__input {
+        width: 100%;
+        padding: 12px 24px;
+
+        background-color: transparent;
+        transition: transform 250ms ease-in-out;
+        font-size: 14px;
+        line-height: 18px;
+        
+        color: #575756;
+        background-color: transparent;
+/*         background-image: url(http://mihaeltomic.com/codepen/input-search/ic_search_black_24px.svg); */
+ 
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 18px 18px;
+        background-position: 95% center;
+        border-radius: 50px;
+        border: 1px solid #575756;
+        transition: all 250ms ease-in-out;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        float: left;
+    }
+
+.search__input::placeholder {
+            color: rgba(87, 87, 86, 0.8);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+.search__input:hover,
+        .search__input:focus {
+            padding: 12px 0;
+            outline: 0;
+            border: 1px solid transparent;
+            border-bottom: 1px solid #ff8b88 ;
+            border-radius: 0;
+            background-position: 100% center;
+        }
+        .navbar-item{
+  padding: .5rem 1rem;
+  font-size: 2.2rem;
+  border-radius: 10px;
+  margin: 0 .1rem;
+  cursor:pointer;
+}
+
+.navbar-item img{
+  display: inline-block;
+  width: 3.5rem;
+  vertical-align: top;
+  border-radius: 50%;
+} .hover-left {
+  transition: transform 0.20s ease-in-out;
+}
+
+.hover-left:active {
+  transform: translateX(-10px);
+}
+    </style>
+  </head>
+<body>
+    <!-- <div class="mobi"> -->
+        
+        <!-- <div class="option">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div> -->
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+              <div class="bg-dark p-4">
+                
+              </div>
+            </div>
+            <nav class="navbar navbar-white bg-white">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <nav class="navbar-item no-hover">
+                
+                <i class="fa fa-map-marker-alt" style='font-size:20px;color:black'>United kingdom</i>
+              </nav>
+              <nav class="navbar-item no-hover">
+            
+                <img src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="">
+            </nav>
+            </nav>
+            
+          </div>
+        <input  type="text" placeholder="Search here" class="search__input"><br><br>
+              
+<div class="row">
+    <div class="col">
+     
+        <img src="data:image/jpeg;base64,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">
+
+        <center><h3>BMW</h3></center>
+      
+    </div>
+  
+    <div class="col">
+     
+        <img width="100%" height="80%" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9pdMPs557viWO5wG7sM66mBEagFkLM_nxFw&usqp=CAU">
+        <center><h3>Audi</h3></center>
+      
+    </div>
+    
+    <div class="col">
+     
+        <img src="data:image/jpeg;base64,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">
+
+        <center><h3>Porsche</h3></center>
+    
+    </div>
+    </div>
+           
+        
+<div class="row">
+    <div class="column"  >
+        
+      <div  class="card hover-left" onclick="window.location.href='./home.html'">
+      
+        <div >
+            <a href="#" style="float: left;border: black 2px;"<i class="fas fa-bookmark"></i></a>
+            <!-- <a href="#" style="float: right;"><i class="fa fa-map-marker-alt"></i></a> -->
+            <h3 style="float: right;">Audi A4</h3>
+           
+            
+        </div>
+    
+        <div >
+            <img style="float: left;" src="./audi.png" width="50%" >
+            <li style=" list-style-type: none;"><i class="fa fa-map-marker-alt" style='color:black;float: right;'>Manchester</i></li>
+            <br>
+            <li style=" list-style-type: none;"><i class="fa fa-star" style='color:black;float: right;'>4.6</i></li>
+            <br><br>
+            <button style="border-radius: 10px;background-color: darkblue;color:white;float: right;">40000$</button>
+        </div>
+       
+        
+       
+      </div>
+    </div>
+  
+    <div class="column" >
+      <div  class="card hover-left" onclick="window.location.href='./home.html'">
+        <div >
+            <a href="#" style="float: left;"<i class="fas fa-bookmark"></i></a>
+            <!-- <a href="#" style="float: right;"><i class="fa fa-map-marker-alt"></i></a> -->
+            <h3 style="float: right;">BMW z4</h3>
+           
+            
+        </div>
+        <div >
+            <img style="float: left;" src="./bmmmm.png" width="50%" >
+            <li style=" list-style-type: none;"><i class="fa fa-map-marker-alt" style='color:black;float: right;'>London</i></li>
+            <br>
+            <li style=" list-style-type: none;"><i class="fa fa-star" style='color:black;float: right;'>4.8</i></li>
+            <br><br>
+            <button style="border-radius: 10px;background-color: darkblue;color:white;float: right;">52000$</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column"  >
+      <div  class="card hover-left" onclick="window.location.href='./home.html'">
+        <div >
+            <a href="#" style="float: left;"<i class="fas fa-bookmark"></i></a>
+            <!-- <a href="#" style="float: right;"><i class="fa fa-map-marker-alt"></i></a> -->
+            <h3 style="float: right;">Porsche 911</h3>
+           
+            
+        </div>
+        <div >
+            <img style="float: left;" src="./porsche.png" width="50%" >
+            <li style=" list-style-type: none;"><i class="fa fa-map-marker-alt" style='color:black;float: right;'>Madrid</i></li>
+            <br>
+            <li style=" list-style-type: none;"><i class="fa fa-star" style='color:black;float: right;'>4.9</i></li>
+            <br><br>
+            <button style="border-radius: 10px;background-color: darkblue;color:white;float: right;">110 000$</button>
+        </div>
+      </div>
+    </div>
+    
+    
+</div>
+
+
+
+
+        <footer class="select">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-bookmark"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+            <a href="#"><i class="fas fa-fa fa-user"></i></a>
+            
+        </footer>
+    <!-- </div> -->
+</body>
+</html>
